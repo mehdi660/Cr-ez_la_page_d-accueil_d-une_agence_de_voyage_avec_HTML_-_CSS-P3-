@@ -21,16 +21,13 @@
     <title>Booki</title>
   </head>
   <body>
-    <nav>
-      <div class="logo_nav">
-        <img src="./Images Booki/logo/Booki.png" alt="Logo booki" />
-      </div>
-      <div class="elements_nav">
-        <ul>
-          <li>Hébergements</li>
-          <li>Activités</li>
-        </ul>
-      </div>
+    <nav class="navbar">
+      <img src="./Images Booki/logo/Booki.png" alt="Logo booki" />
+
+      <ul>
+        <a href="#heberg"><li class="hebergement">Hébergements</li></a>
+        <a href="#activ"><li class="activite">Activités</li></a>
+      </ul>
     </nav>
     <header>
       <h2>Trouvez votre hébergements pour des vacences de rêves</h2>
@@ -58,7 +55,7 @@
     </div>
     <main>
       <div class="card_left">
-        <h2>Hébergements à Marseille</h2>
+        <h2 id="heberg">Hébergements à Marseille</h2>
         <div class="card_items">
           <div class="canebiere card" a>
             <img
@@ -195,5 +192,64 @@
         </div>
       </div>
     </main>
+    <section>
+      <h2 id="activ">Activités à Marseille</h2>
+      <div class="activity">
+        <div id="vieux-port">
+          <img
+            src="/Images Booki/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
+            alt="Vieux-Port"
+          />
+          <h3>Vieux-Port</h3>
+        </div>
+        <div id="pomegues">
+          <img
+            src="./Images Booki/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
+            alt="Fort de Pomègues"
+          />
+          <h3>Fort de Pomègues</h3>
+        </div>
+        <div id="calanques">
+          <img
+            src="./Images Booki/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
+            alt="Parc national des Calanques"
+          />
+          <h3>Parc national des Calanques</h3>
+        </div>
+        <div id="dame">
+          <img
+            src="./Images Booki/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg"
+            alt="Notre-Dame-de-la-Garde"
+          />
+          <h3>Notre-Dame-de-la-Garde</h3>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer_container">
+        <div class="propos">
+          <h3>À propos</h3>
+          <ul>
+            <li>Fonctionnement du site</li>
+            <li>Conditions générales</li>
+            <li>Donnés et confidentialité</li>
+          </ul>
+        </div>
+        <div class="hebergements">
+          <h3>Nos hébergements</h3>
+          <ul>
+            <li>Charte qualité</li>
+            <li>Proposer votre hôtel</li>
+          </ul>
+        </div>
+        <div class="assistance">
+          <h3>assistance</h3>
+          <ul>
+            <li>Centre d'aide</li>
+            <li>Nous contacter</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

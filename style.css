@@ -1,9 +1,55 @@
-.card_items img {
-  width: 300px;
-  height: 300px;
+* {
+  box-sizing: border-box;
+  margin: 0 auto;
+  scroll-behavior: smooth;
 }
 
-.card_container img {
-  width: 300px;
-  height: 300px;
+body {
+  max-width: 1400px;
+  font-family: Raleway, sans-serif;
+  background: #f2f2f2;
+}
+.navbar {
+  width: 1400px;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav img {
+  width: 80px;
+  height: 25px;
+  margin: 0;
+}
+nav ul {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
+nav li {
+  list-style: none;
+  margin: 40px;
+}
+
+ul a {
+  text-decoration: none;
+  color: black;
+}
+
+ul a :hover {
+  color: #0065fc;
+}
+
+ul a :hover:before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 10%;
+  top: 0px;
+  background-color: #0065fc;
+}
+
+header {
+  margin-top: 50px;
 }
