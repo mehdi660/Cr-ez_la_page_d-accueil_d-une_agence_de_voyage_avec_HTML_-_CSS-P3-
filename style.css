@@ -64,6 +64,7 @@ ul a :hover {
 
 header {
   margin-top: 50px;
+  border: 1px solid black;
 }
 
 .title h2 {
@@ -141,6 +142,7 @@ form button:hover {
   margin: 0;
   display: flex;
   justify-content: flex-start;
+  border: 1px solid black;
 }
 
 .filter h3 {
@@ -198,4 +200,29 @@ form button:hover {
 
 .dog {
   width: 180px;
+}
+
+.infos {
+  width: 700px;
+  margin: 0;
+  padding-top: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.infos p {
+  margin-left: 11px;
+}
+
+.infos i {
+  margin: 0px;
+  color: #0065fc;
+  border: 1px solid #d9d9d9;
+  border-radius: 1000%;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
 }
