@@ -135,3 +135,67 @@ form button:hover {
   cursor: pointer;
   background-color: #0065fccd;
 }
+
+.filter {
+  width: 1300px;
+  margin: 0;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.filter h3 {
+  margin: 0;
+  margin-right: 50px;
+  font-weight: 700;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+
+.filter_icon {
+  display: flex;
+  margin: 0;
+  width: 700px;
+  justify-content: space-between;
+}
+
+.filter_icon button {
+  margin: 0;
+  background: #ffffff;
+  border: 2px solid #d9d9d9;
+  border-radius: 25px;
+  height: 40px;
+  align-items: center;
+  text-align: center;
+  font-weight: 700;
+  padding: 0;
+  transition: ease-in-out 0.2s;
+}
+
+.filter_icon button:hover {
+  background-color: #deebff;
+  cursor: pointer;
+}
+
+.filter_icon i {
+  padding-right: 5px;
+  color: #0065fc;
+  font-size: 18px;
+  padding-right: 10px;
+}
+
+.money {
+  width: 150px;
+}
+
+.person {
+  width: 120px;
+}
+
+.heart {
+  width: 135px;
+}
+
+.dog {
+  width: 180px;
+}
