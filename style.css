@@ -6,21 +6,36 @@
 
 body {
   max-width: 1400px;
+  min-width: 1000px;
+  padding-left: 50px;
   font-family: Raleway, sans-serif;
-  background: #f2f2f2;
+  background: #ffffff;
+  border: 1px solid black;
+}
+
+section img {
+  width: 50px;
+  height: 50px;
+}
+
+main img {
+  width: 50px;
+  height: 50px;
 }
 .navbar {
-  width: 1400px;
+  width: 1200px;
   height: 100px;
   display: flex;
+  margin: 0;
   justify-content: space-between;
   align-items: center;
+  border: 1px solid black;
 }
 
 nav img {
   width: 80px;
   height: 25px;
-  margin: 0;
+  margin-left: 1px;
 }
 nav ul {
   margin: 0;
@@ -32,6 +47,10 @@ nav li {
   margin: 40px;
 }
 
+ul {
+  position: relative;
+}
+
 ul a {
   text-decoration: none;
   color: black;
@@ -39,17 +58,80 @@ ul a {
 
 ul a :hover {
   color: #0065fc;
-}
-
-ul a :hover:before {
-  content: "";
-  position: absolute;
-  height: 2px;
-  width: 10%;
-  top: 0px;
-  background-color: #0065fc;
+  border-top: 2px solid #0065fc;
+  padding-top: 80px;
 }
 
 header {
   margin-top: 50px;
+}
+
+.title h2 {
+  font-weight: 700;
+  margin-bottom: 10px;
+  font-size: 22px;
+}
+
+.title p {
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.city_shearch {
+  height: 55px;
+  width: 600px;
+  margin-left: 0;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  display: flex;
+}
+.icon {
+  border: 1px solid #f2f2f2;
+  background: #f2f2f2;
+  border-radius: 15px 0px 0px 15px;
+  margin: 0;
+  margin-top: 0px;
+  margin-right: 0px;
+  padding: 0;
+  height: 49px;
+  width: 45px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.formulaire {
+  margin: 0;
+}
+
+form input {
+  border: none;
+  height: 49px;
+  width: 230px;
+  border: 1px solid #f2f2f2;
+  border-radius: 3px;
+  font-family: raleway, sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  margin-right: 0;
+}
+
+form button {
+  border: none;
+  width: 132px;
+  height: 49px;
+  background: #0065fc;
+  border: 1px solid #0065fc;
+  border-radius: 0px 15px 15px 0px;
+  font-family: raleway, sans-serif;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 18px;
+  transition: ease-in-out 0.2s;
+  margin-left: 0;
+}
+
+form button:hover {
+  cursor: pointer;
+  background-color: #0065fccd;
 }
