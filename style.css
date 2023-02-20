@@ -6,7 +6,7 @@
 
 body {
   max-width: 1400px;
-  min-width: 1000px;
+
   padding-left: 50px;
   font-family: Raleway, sans-serif;
   background: #ffffff;
@@ -23,7 +23,7 @@ main img {
   height: 50px;
 }
 .navbar {
-  width: 1200px;
+  width: 100%;
   height: 100px;
   display: flex;
   margin: 0;
@@ -80,7 +80,7 @@ header {
 
 .city_shearch {
   height: 55px;
-  width: 600px;
+  width: 90%;
   margin-left: 0;
   margin-top: 20px;
   margin-bottom: 30px;
@@ -138,7 +138,7 @@ form button:hover {
 }
 
 .filter {
-  width: 1300px;
+  width: 90%;
   margin: 0;
   display: flex;
   justify-content: flex-start;
@@ -208,6 +208,7 @@ form button:hover {
   padding-top: 40px;
   display: flex;
   align-items: center;
+  margin-bottom: 37px;
 }
 
 .infos p {
@@ -225,4 +226,203 @@ form button:hover {
   justify-content: center;
   align-items: center;
   font-size: 13px;
+}
+
+main {
+  display: flex;
+  padding-bottom: 60px;
+}
+
+.card_left {
+  background: #f2f2f2;
+  border-radius: 20px;
+  padding: 30px 30px;
+  margin: 0;
+  width: 900px;
+  height: 650px;
+  margin-right: 1px;
+}
+
+.card_left h2 {
+  margin-bottom: 39px;
+}
+
+.card_items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 0;
+}
+
+.card {
+  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+  transition: 0.3s;
+  padding: 2px;
+  border-radius: 20px;
+  width: 246px;
+  height: 210px;
+  background: #ffff;
+  cursor: pointer;
+  transition: ease-in-out 0.3s;
+  box-sizing: initial;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  transform: scale(1.03);
+}
+
+.card img {
+  width: 246px;
+  height: 124px;
+  object-fit: cover;
+  border: 5px solid #ffffff;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.card h3 {
+  padding-bottom: 5px;
+  padding-left: 5px;
+}
+
+.card p {
+  padding-bottom: 5px;
+  padding-left: 5px;
+}
+
+.card i {
+  color: #0065fc;
+  font-size: 13px;
+}
+
+.afficher {
+  text-align: left;
+  padding-right: 55%;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.star {
+  padding-left: 5px;
+}
+
+.title_right {
+  display: flex;
+  margin: 0;
+  width: 100%;
+  align-items: baseline;
+}
+
+.title_right h2 {
+  margin: 0;
+  padding-bottom: 26px;
+}
+
+.fa-chart-line {
+  color: #0065fc;
+  padding-left: 100px;
+}
+
+.card_right {
+  display: block;
+  width: 400px;
+  background: #f2f2f2;
+  border-radius: 20px;
+  padding: 30px 30px;
+}
+
+.cards {
+  /* filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1)); */
+  transition: 0.3s;
+  padding: 5px;
+  margin-top: 10px;
+  border-radius: 20px;
+  width: 343px;
+  height: 144px;
+  background: #ffff;
+
+  box-sizing: initial;
+  display: flex;
+  gap: 10px;
+}
+
+.cards :hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  transition: ease-in-out 0.3s;
+  cursor: pointer;
+  /* transform: scale(1.03); */
+}
+
+.container {
+  padding-left: 15px;
+}
+
+.cards img {
+  width: 137px;
+  height: 144px;
+  object-fit: cover;
+  border: 1px solid #ffffff;
+  border-radius: 20px 0px 0px 20px;
+  margin: 0;
+}
+
+.cards i {
+  color: #0065fc;
+}
+
+.cards h3 {
+  padding-top: 10px;
+  padding-bottom: 7px;
+}
+
+.cards p {
+  padding-bottom: 44px;
+}
+
+.card_container {
+  padding-top: 20px;
+}
+
+.bleu p {
+  padding-bottom: 60px;
+}
+
+.activite {
+  width: 100%;
+  height: 700px;
+}
+
+.activite h2 {
+  padding-bottom: 50px;
+}
+
+.activite_card {
+  display: flex;
+}
+
+.activite img {
+  width: 300px;
+  height: 445px;
+  border-radius: 20px;
+  padding-bottom: 15px;
+}
+
+.activite h3 {
+  text-align: start;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  font-weight: 700;
+}
+
+.cardd {
+  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+  transition: 0.3s;
+  padding: 2px;
+  border-radius: 20px;
+  width: 300px;
+  height: 490px;
+  background: #ffff;
+  cursor: pointer;
+  transition: ease-in-out 0.3s;
+  box-sizing: initial;
 }
