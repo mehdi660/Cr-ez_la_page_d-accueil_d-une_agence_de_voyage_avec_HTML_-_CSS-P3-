@@ -54,8 +54,7 @@ ul a {
   color: black;
 }
 
-ul a:hover {
-  color: #0065fc;
+nav li:hover {
   border-top: 2px solid #0065fc;
   padding-top: 20px;
 }
@@ -234,9 +233,9 @@ main {
   border-radius: 20px;
   padding: 30px 30px;
   margin: 0;
-  width: 900px;
-  height: 650px;
-  margin-right: 1px;
+  width: 95%;
+  height: 95%px;
+  margin-right: 20px;
 }
 
 .card_left h2 {
@@ -289,6 +288,10 @@ main {
 .card i {
   color: #0065fc;
   font-size: 13px;
+}
+
+.fa-star {
+  color: #e73414;
 }
 
 .afficher {
@@ -394,6 +397,7 @@ main {
 
 .activite_card {
   display: flex;
+  width: 100%;
 }
 
 .activite img {
@@ -415,7 +419,8 @@ main {
   transition: 0.3s;
   padding: 2px;
   border-radius: 20px;
-  width: 300px;
+  /* width: 100%; */
+  gap: 1px;
   height: 490px;
   background: #ffff;
   cursor: pointer;
@@ -423,10 +428,10 @@ main {
   box-sizing: initial;
 }
 
-.cardd:hover {
+/* .cardd:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-  transform: scale(1.03);
-}
+  transform: scale(1.01);
+} */
 
 footer {
   width: 97%;
@@ -493,4 +498,54 @@ footer {
 
 .assistance ul {
   padding: 0;
+}
+
+@media screen and (max-width: 1285px) {
+  .activite_card img {
+    width: 100%;
+    height: 80%;
+  }
+
+  .card_left h2 {
+    margin-top: 0px;
+    margin-bottom: 40px;
+    margin-left: 30px;
+  }
+
+  .afficher {
+    padding: 20px;
+    text-align-last: left;
+  }
+
+  .card_right {
+    margin-left: 10px;
+  }
+}
+
+@media screen and (max-width: 1090px) {
+  .card_items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0;
+    padding: 2px;
+  }
+
+  .card_left {
+    margin: 0;
+    padding: 0;
+  }
+
+  .card_left h2 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+  }
+
+  .card {
+    margin-top: 20px;
+  }
+  .afficher {
+    padding: 20px;
+    text-align-last: left;
+  }
 }
