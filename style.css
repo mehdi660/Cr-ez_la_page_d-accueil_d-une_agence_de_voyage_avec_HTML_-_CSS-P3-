@@ -10,7 +10,6 @@ body {
   padding-left: 50px;
   font-family: Raleway, sans-serif;
   background: #ffffff;
-  border: 1px solid black;
 }
 
 section img {
@@ -29,11 +28,10 @@ main img {
   margin: 0;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid black;
 }
 
 nav img {
-  width: 80px;
+  width: 61.09px;
   height: 25px;
   margin-left: 1px;
 }
@@ -56,15 +54,14 @@ ul a {
   color: black;
 }
 
-ul a :hover {
+ul a:hover {
   color: #0065fc;
   border-top: 2px solid #0065fc;
-  padding-top: 80px;
+  padding-top: 20px;
 }
 
 header {
   margin-top: 50px;
-  border: 1px solid black;
 }
 
 .title h2 {
@@ -138,11 +135,10 @@ form button:hover {
 }
 
 .filter {
-  width: 90%;
+  width: 100%;
   margin: 0;
   display: flex;
   justify-content: flex-start;
-  border: 1px solid black;
 }
 
 .filter h3 {
@@ -332,7 +328,7 @@ main {
 }
 
 .cards {
-  /* filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1)); */
+  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
   transition: 0.3s;
   padding: 5px;
   margin-top: 10px;
@@ -346,11 +342,11 @@ main {
   gap: 10px;
 }
 
-.cards :hover {
+.cards:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   transition: ease-in-out 0.3s;
   cursor: pointer;
-  /* transform: scale(1.03); */
+  transform: scale(1.03);
 }
 
 .container {
@@ -425,4 +421,76 @@ main {
   cursor: pointer;
   transition: ease-in-out 0.3s;
   box-sizing: initial;
+}
+
+.cardd:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  transform: scale(1.03);
+}
+
+footer {
+  width: 97%;
+  height: 250px;
+  background: #f2f2f2;
+  padding-top: 45px;
+}
+
+.footer_container {
+  height: 90%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.propos {
+  margin: 0;
+}
+
+.propos h3 {
+  font-weight: 700;
+  padding-bottom: 25px;
+}
+
+.propos li {
+  list-style: none;
+  padding-bottom: 10px;
+}
+
+.propos ul {
+  padding: 0;
+}
+
+.hebergements {
+  margin: 0;
+}
+
+.assistance {
+  margin: 0;
+}
+
+.hebergements h3 {
+  font-weight: 700;
+  padding-bottom: 25px;
+}
+
+.hebergements li {
+  list-style: none;
+  padding-bottom: 10px;
+}
+
+.hebergements ul {
+  padding: 0;
+}
+
+.assistance h3 {
+  font-weight: 700;
+  padding-bottom: 30px;
+}
+
+.assistance li {
+  list-style: none;
+  padding-bottom: 10px;
+}
+
+.assistance ul {
+  padding: 0;
 }
