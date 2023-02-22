@@ -6,7 +6,6 @@
 
 body {
   max-width: 1400px;
-
   padding-left: 50px;
   font-family: Raleway, sans-serif;
   background: #ffffff;
@@ -414,12 +413,16 @@ main {
   font-weight: 700;
 }
 
+.activite_card {
+  width: 100%;
+}
+
 .cardd {
   filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
   transition: 0.3s;
   padding: 2px;
   border-radius: 20px;
-  /* width: 100%; */
+  width: 300px;
   gap: 1px;
   height: 490px;
   background: #ffff;
@@ -428,10 +431,10 @@ main {
   box-sizing: initial;
 }
 
-/* .cardd:hover {
+.cardd:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   transform: scale(1.01);
-} */
+}
 
 footer {
   width: 97%;
@@ -501,6 +504,15 @@ footer {
 }
 
 @media screen and (max-width: 1285px) {
+  .cardd {
+    width: 95%;
+    height: 380px;
+  }
+
+  .cardd h3 {
+    padding: 0;
+  }
+
   .activite_card img {
     width: 100%;
     height: 80%;
@@ -547,5 +559,94 @@ footer {
   .afficher {
     padding: 20px;
     text-align-last: left;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  body {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  main {
+    display: block;
+    padding-right: 22px;
+    padding-left: 22px;
+  }
+
+  .card_left {
+    width: 100%;
+    height: 100%;
+  }
+  .card_left h2 {
+    padding-top: 42px;
+    padding-left: 40px;
+  }
+
+  .card {
+    width: 246px;
+    height: 199px;
+    padding-bottom: 5px;
+  }
+
+  .container {
+    padding-left: 5px;
+  }
+  .cards {
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    transition: 0.3s;
+    padding: 2px;
+    border-radius: 20px;
+    width: 252px;
+    height: 144px;
+    background: #ffff;
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+    box-sizing: initial;
+  }
+
+  .card_items {
+    padding-left: 30px;
+  }
+
+  .card_right {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding-top: 20px;
+    margin-top: 30px;
+  }
+
+  .bleu p {
+    padding-bottom: 0px;
+  }
+
+  .card_right p {
+    padding: 0;
+  }
+
+  .card_right img {
+    width: 106px;
+    height: 144px;
+  }
+
+  .card_container {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    padding-bottom: 20px;
+  }
+
+  .card_right p {
+    margin: 0;
+    font-size: 12px;
+    padding-bottom: 40px;
+  }
+  .card_right h3 {
+    margin: 0;
+    font-size: 16px;
+  }
+  .card_right h2 {
+    padding-bottom: 0;
   }
 }
