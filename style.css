@@ -9,6 +9,7 @@ body {
   padding-left: 50px;
   font-family: Raleway, sans-serif;
   background: #ffffff;
+  overflow-x: hidden;
 }
 
 section img {
@@ -225,6 +226,7 @@ form button:hover {
 main {
   display: flex;
   padding-bottom: 60px;
+  height: 100%;
 }
 
 .card_left {
@@ -233,7 +235,7 @@ main {
   padding: 30px 30px;
   margin: 0;
   width: 95%;
-  height: 95%px;
+  height: 630px;
   margin-right: 20px;
 }
 
@@ -242,9 +244,9 @@ main {
 }
 
 .card_items {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
   padding: 0;
 }
 
@@ -252,6 +254,7 @@ main {
   filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
   transition: 0.3s;
   padding: 2px;
+  margin-bottom: 10px;
   border-radius: 20px;
   width: 246px;
   height: 210px;
@@ -289,6 +292,10 @@ main {
   font-size: 13px;
 }
 
+.empty {
+  color: #deebff;
+}
+
 .fa-star {
   color: #e73414;
 }
@@ -323,7 +330,8 @@ main {
 
 .card_right {
   display: block;
-  width: 400px;
+  width: 40%;
+  height: 630px;
   background: #f2f2f2;
   border-radius: 20px;
   padding: 30px 30px;
@@ -334,6 +342,7 @@ main {
   transition: 0.3s;
   padding: 5px;
   margin-top: 10px;
+  margin-bottom: 10px;
   border-radius: 20px;
   width: 343px;
   height: 144px;
@@ -378,7 +387,7 @@ main {
 }
 
 .card_container {
-  padding-top: 20px;
+  padding-top: 0px;
 }
 
 .bleu p {
@@ -503,7 +512,13 @@ footer {
   padding: 0;
 }
 
-@media screen and (max-width: 1285px) {
+@media screen and (max-width: 1293px) {
+  .card_items {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    padding: 0;
+  }
   .cardd {
     width: 95%;
     height: 380px;
@@ -511,6 +526,10 @@ footer {
 
   .cardd h3 {
     padding: 0;
+  }
+
+  .activite_card {
+    gap: 10px;
   }
 
   .activite_card img {
@@ -529,8 +548,17 @@ footer {
     text-align-last: left;
   }
 
+  .card_left {
+    height: 100%;
+  }
+
   .card_right {
     margin-left: 10px;
+    height: 870px;
+  }
+
+  .cards {
+    margin-bottom: 90px;
   }
 }
 
@@ -540,6 +568,15 @@ footer {
     flex-wrap: wrap;
     gap: 0;
     padding: 2px;
+  }
+
+  .card_right {
+    width: 40%;
+    height: 875px;
+  }
+
+  .bleu {
+    margin-bottom: 0;
   }
 
   .card_left {
@@ -559,6 +596,10 @@ footer {
   .afficher {
     padding: 20px;
     text-align-last: left;
+  }
+
+  .activite_card {
+    gap: 10px;
   }
 }
 
@@ -589,8 +630,29 @@ footer {
     padding-bottom: 5px;
   }
 
+  .card img {
+    width: 246px;
+    height: 124px;
+  }
+
   .container {
     padding-left: 5px;
+  }
+
+  .container p {
+    padding-left: 5px;
+    padding-bottom: 500%;
+  }
+
+  .afficher {
+    width: 868px;
+    text-align: left;
+    padding-left: 50px;
+    font-size: 18px;
+  }
+
+  .afficher h3 {
+    font-size: 18px;
   }
   .cards {
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
@@ -603,22 +665,41 @@ footer {
     cursor: pointer;
     transition: ease-in-out 0.3s;
     box-sizing: initial;
+    margin: 0;
   }
 
   .card_items {
     padding-left: 30px;
   }
 
+  .card_items h3 {
+    font-size: 16px;
+  }
+
+  .card_items p {
+    font-size: 11px;
+  }
+
   .card_right {
     width: 100%;
-    height: 100%;
+    height: 300px;
     margin: 0;
     padding-top: 20px;
     margin-top: 30px;
   }
 
-  .bleu p {
-    padding-bottom: 0px;
+  .title_right {
+    width: 100%;
+  }
+
+  .title_right h2 {
+    padding-right: 70%;
+    font-size: 18px;
+  }
+
+  .title_right i {
+    margin: 0;
+    padding: 0;
   }
 
   .card_right p {
@@ -632,21 +713,48 @@ footer {
 
   .card_container {
     display: flex;
-    align-items: baseline;
+    align-items: center;
     justify-content: center;
     padding-bottom: 20px;
+    gap: 1%;
+    height: 250px;
   }
 
   .card_right p {
     margin: 0;
     font-size: 12px;
-    padding-bottom: 40px;
+    padding-bottom: 10px;
   }
   .card_right h3 {
     margin: 0;
-    font-size: 16px;
+    font-size: 14px;
   }
   .card_right h2 {
     padding-bottom: 0;
+  }
+
+  .card_right i {
+    font-size: 11px;
+  }
+
+  .activite {
+    width: 100%;
+    height: 450px;
+  }
+
+  #activ {
+    font-size: 16px;
+    font-weight: 700;
+    margin-left: 20px;
+  }
+
+  .cardd {
+    width: 182px;
+    height: 250px;
+  }
+
+  .cardd h3 {
+    padding-left: 5px;
+    font-size: 16px;
   }
 }
