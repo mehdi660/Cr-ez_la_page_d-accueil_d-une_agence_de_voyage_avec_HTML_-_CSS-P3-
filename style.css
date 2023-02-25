@@ -1,14 +1,9 @@
+/* -----------------------------Réglages généraux----------------------------- */
 * {
   box-sizing: border-box;
   margin: 0 auto;
   scroll-behavior: smooth;
-}
-
-.colorblue {
-  color: #0065fc;
-}
-.colorgrey {
-  color: #d6d1d1;
+  padding: 0;
 }
 
 body {
@@ -16,7 +11,7 @@ body {
   padding-left: 50px;
   font-family: Raleway, sans-serif;
   background: #ffffff;
-  overflow-x: hidden;
+  margin: 0 auto;
 }
 
 section img {
@@ -28,7 +23,10 @@ main img {
   width: 50px;
   height: 50px;
 }
-.navbar img {
+
+/* -----------------------------Navbar----------------------------- */
+
+nav img {
   height: 19px;
   width: 62px;
   margin: 0;
@@ -36,38 +34,37 @@ main img {
   margin-right: 100px;
 }
 
-.navbar {
+nav {
   display: flex;
-  /* justify-content: space-between; */
   flex-direction: row;
   align-items: center;
   width: 100%;
 }
 
-.ul {
+nav div {
   display: flex;
   flex-direction: row;
   justify-content: center;
-
   width: 100%;
   margin-left: 60%;
 }
 
-.ul a {
+nav a {
   display: flex;
   justify-content: center;
-  width: 162px;
+  width: 100%;
   padding-top: 48px;
-
   text-decoration: none;
   color: black;
   margin: 0;
 }
 
-.ul a:hover {
+nav a:hover {
   color: #0065fc;
   border-top: #0065fc 2px solid;
 }
+
+/* -----------------------------Header----------------------------- */
 
 header {
   margin-top: 50px;
@@ -152,8 +149,10 @@ form button:hover {
   background-color: #0065fccd;
 }
 
+/* -----------------------------Filter----------------------------- */
+
 .filter {
-  width: 100%;
+  width: 70%;
   margin: 0;
   display: flex;
   justify-content: flex-start;
@@ -161,7 +160,6 @@ form button:hover {
 
 .filter h3 {
   margin: 0;
-  margin-right: 50px;
   font-weight: 700;
   font-size: 18px;
   display: flex;
@@ -171,12 +169,12 @@ form button:hover {
 .filter_icon {
   display: flex;
   margin: 0;
-  width: 700px;
-  justify-content: space-between;
+  width: 100%;
 }
 
 .filter_icon button {
   margin: 0;
+  margin-left: 3%;
   background: #ffffff;
   border: 2px solid #d9d9d9;
   border-radius: 25px;
@@ -184,7 +182,6 @@ form button:hover {
   align-items: center;
   text-align: center;
   font-weight: 700;
-  padding: 0;
   transition: ease-in-out 0.2s;
 }
 
@@ -196,7 +193,7 @@ form button:hover {
 .filter_icon i {
   padding-right: 5px;
   color: #0065fc;
-  font-size: 18px;
+  font-size: 16px;
   padding-right: 10px;
 }
 
@@ -215,6 +212,8 @@ form button:hover {
 .dog {
   width: 180px;
 }
+
+/* -----------------------------Infos----------------------------- */
 
 .infos {
   width: 700px;
@@ -242,6 +241,8 @@ form button:hover {
   font-size: 13px;
 }
 
+/* -----------------------------Main / Left Part----------------------------- */
+
 main {
   display: flex;
   padding-bottom: 60px;
@@ -253,8 +254,7 @@ main {
   border-radius: 20px;
   padding: 30px 30px;
   margin: 0;
-  width: 95%;
-  height: 630px;
+  width: 100%;
   margin-right: 20px;
 }
 
@@ -266,30 +266,34 @@ main {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 10px;
-  padding: 0;
+  margin-bottom: 30px;
+}
+
+.card_items i {
+  font-size: 12px;
+}
+
+.ligne {
+  border: 2px solid red;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
 }
 
 .card {
   filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-  transition: 0.3s;
   padding: 2px;
   margin-bottom: 10px;
   border-radius: 20px;
-  width: 246px;
+  width: 30%;
   height: 210px;
   background: #ffff;
   cursor: pointer;
-  transition: ease-in-out 0.3s;
   box-sizing: initial;
 }
 
-.card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-  transform: scale(1.03);
-}
-
 .card img {
-  width: 246px;
+  width: 100%;
   height: 124px;
   object-fit: cover;
   border: 5px solid #ffffff;
@@ -299,11 +303,13 @@ main {
 .card h3 {
   padding-bottom: 5px;
   padding-left: 5px;
+  font-size: 13px;
 }
 
 .card p {
-  padding-bottom: 5px;
+  padding-bottom: 10px;
   padding-left: 5px;
+  font-size: 11px;
 }
 
 .afficher {
@@ -314,65 +320,69 @@ main {
 }
 
 .star {
-  padding-left: 5px;
+  padding-left: 11px;
 }
+
+/* -----------------------------Main / Left Part----------------------------- */
 
 .title_right {
   display: flex;
-  margin: 0;
-  width: 100%;
-  align-items: baseline;
-}
-
-.title_right h2 {
-  margin: 0;
-  padding-bottom: 26px;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  align-items: center;
 }
 
 .fa-chart-line {
   color: #0065fc;
-  padding-left: 100px;
+  margin: 0;
 }
 
 .card_right {
-  display: block;
   width: 40%;
-  height: 630px;
+  height: 650px;
   background: #f2f2f2;
   border-radius: 20px;
   padding: 30px 30px;
 }
 
+.card_right h2 {
+  font-size: 22px;
+  margin: 0;
+}
+
 .cards {
   filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-  transition: 0.3s;
   padding: 5px;
-  margin-top: 10px;
+  margin-top: 5px;
   margin-bottom: 10px;
   border-radius: 20px;
-  width: 343px;
+  width: 100%;
   height: 144px;
   background: #ffff;
-
   box-sizing: initial;
   display: flex;
   gap: 10px;
 }
 
+.colorblue {
+  color: #0065fc;
+}
+.colorgrey {
+  color: #d6d1d1;
+}
+
 .cards:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-  transition: ease-in-out 0.3s;
   cursor: pointer;
-  transform: scale(1.03);
 }
 
 .container {
-  padding-left: 15px;
+  padding-left: 5px;
+  margin: 0;
 }
 
 .cards img {
-  width: 137px;
-  height: 144px;
+  width: 130px;
+  height: 100%;
   object-fit: cover;
   border: 1px solid #ffffff;
   border-radius: 20px 0px 0px 20px;
@@ -382,19 +392,29 @@ main {
 .cards h3 {
   padding-top: 10px;
   padding-bottom: 7px;
+  font-size: 14px;
 }
 
 .cards p {
-  padding-bottom: 44px;
+  padding-bottom: 20px;
+  font-size: 12px;
 }
 
 .card_container {
-  padding-top: 0px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.card_container i {
+  font-size: 12px;
 }
 
 .bleu p {
-  padding-bottom: 60px;
+  padding-bottom: 30px;
 }
+
+/* -----------------------------Activty Part----------------------------- */
 
 .activite {
   width: 100%;
@@ -411,7 +431,7 @@ main {
 }
 
 .activite img {
-  width: 300px;
+  width: 100%;
   height: 445px;
   border-radius: 20px;
   padding-bottom: 15px;
@@ -433,8 +453,8 @@ main {
   transition: 0.3s;
   padding: 2px;
   border-radius: 20px;
-  width: 300px;
-  gap: 1px;
+  width: 100%;
+  column-gap: 300px;
   height: 490px;
   background: #ffff;
   cursor: pointer;
@@ -446,6 +466,8 @@ main {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   transform: scale(1.01);
 }
+
+/* ----------------------------- Footer ----------------------------- */
 
 footer {
   width: 97%;
@@ -514,96 +536,7 @@ footer {
   padding: 0;
 }
 
-@media screen and (max-width: 1293px) {
-  .card_items {
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 10px;
-    padding: 0;
-  }
-  .cardd {
-    width: 95%;
-    height: 380px;
-  }
-
-  .cardd h3 {
-    padding: 0;
-  }
-
-  .activite_card {
-    gap: 10px;
-  }
-
-  .activite_card img {
-    width: 100%;
-    height: 80%;
-  }
-
-  .card_left h2 {
-    margin-top: 0px;
-    margin-bottom: 40px;
-    margin-left: 30px;
-  }
-
-  .afficher {
-    padding: 20px;
-    text-align-last: left;
-  }
-
-  .card_left {
-    height: 100%;
-  }
-
-  .card_right {
-    margin-left: 10px;
-    height: 870px;
-  }
-
-  .cards {
-    margin-bottom: 90px;
-  }
-}
-
-@media screen and (max-width: 1090px) {
-  .card_items {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0;
-    padding: 2px;
-  }
-
-  .card_right {
-    width: 40%;
-    height: 875px;
-  }
-
-  .bleu {
-    margin-bottom: 0;
-  }
-
-  .card_left {
-    margin: 0;
-    padding: 0;
-  }
-
-  .card_left h2 {
-    margin-top: 30px;
-    margin-bottom: 10px;
-    margin-left: 10px;
-  }
-
-  .card {
-    margin-top: 20px;
-  }
-  .afficher {
-    padding: 20px;
-    text-align-last: left;
-  }
-
-  .activite_card {
-    gap: 10px;
-  }
-}
+/* -----------------------------Responsive Tablette----------------------------- */
 
 @media screen and (max-width: 992px) {
   body {
@@ -613,8 +546,8 @@ footer {
 
   main {
     display: block;
-    padding-right: 22px;
-    padding-left: 22px;
+    /* padding-right: 22px;
+    padding-left: 22px; */
   }
 
   .card_left {
@@ -623,18 +556,18 @@ footer {
   }
   .card_left h2 {
     padding-top: 42px;
-    padding-left: 40px;
+    padding-left: 4%;
   }
 
   .card {
-    width: 246px;
-    height: 199px;
+    width: 226px;
+    height: 179px;
     padding-bottom: 5px;
   }
 
   .card img {
-    width: 246px;
-    height: 124px;
+    width: 226px;
+    height: 104px;
   }
 
   .container {
@@ -658,21 +591,21 @@ footer {
   }
   .cards {
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-    transition: 0.3s;
     padding: 2px;
     border-radius: 20px;
     width: 252px;
     height: 144px;
     background: #ffff;
     cursor: pointer;
-    transition: ease-in-out 0.3s;
     box-sizing: initial;
     margin: 0;
     position: relative;
   }
 
   .card_items {
-    padding-left: 30px;
+    padding-left: 10px;
+    width: 100%;
+    height: 100%;
   }
 
   .card_items h3 {
@@ -681,6 +614,11 @@ footer {
 
   .card_items p {
     font-size: 11px;
+  }
+
+  .card_items i {
+    position: absolute;
+    bottom: 10px;
   }
 
   .card_right {
@@ -702,9 +640,6 @@ footer {
 
   .star_right {
     position: absolute;
-    height: 20%;
-    bottom: 5px;
-    right: 10%;
   }
 
   .title_right i {
@@ -774,37 +709,5 @@ footer {
   .cardd h3 {
     padding-left: 5px;
     font-size: 16px;
-  }
-
-  @media screen and (max-width: 810px) {
-    .card_items {
-      gap: 2%;
-    }
-
-    .container {
-      gap: 2%;
-    }
-
-    .container h3 {
-      font-size: 12px;
-    }
-
-    .cards {
-      position: relative;
-    }
-
-    .star_right {
-      position: absolute;
-      height: 20%;
-      bottom: 5px;
-      right: 10px;
-    }
-
-    .card_items i {
-      font-size: 9px;
-    }
-    .container i {
-      font-size: 9px;
-    }
   }
 }
