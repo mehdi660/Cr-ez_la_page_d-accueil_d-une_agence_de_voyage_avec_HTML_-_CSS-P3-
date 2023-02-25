@@ -260,6 +260,7 @@ main {
   padding: 30px 30px;
   margin: 0;
   width: 100%;
+  height: 626px;
   margin-right: 20px;
 }
 
@@ -267,16 +268,17 @@ main {
   margin-bottom: 39px;
   font-size: 22px;
   font-weight: 700;
+  padding-left: 15px;
 }
 
-.card_items {
+.card_container_left {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 10px;
   margin-bottom: 30px;
 }
 
-.card_items i {
+.card_container_left i {
   font-size: 12px;
 }
 
@@ -320,9 +322,11 @@ main {
 
 .afficher {
   text-align: left;
-  padding-right: 55%;
+  padding-left: 15px;
   cursor: pointer;
   font-weight: 700;
+  width: 207px;
+  margin: 0;
 }
 
 .text-card-left {
@@ -343,7 +347,7 @@ main {
   height: 12px;
 }
 
-/* -----------------------------Main / Left Part----------------------------- */
+/* -----------------------------Main / Right Part----------------------------- */
 
 .title_right {
   display: flex;
@@ -359,7 +363,7 @@ main {
 
 .card_right {
   width: 40%;
-  height: 650px;
+  height: 626px;
   background: #f2f2f2;
   border-radius: 20px;
   padding: 30px 30px;
@@ -374,7 +378,7 @@ main {
   filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
   padding: 5px;
   margin-top: 5px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   border-radius: 20px;
   width: 100%;
   height: 144px;
@@ -382,6 +386,7 @@ main {
   box-sizing: initial;
   display: flex;
   gap: 10px;
+  position: relative;
 }
 
 .colorblue {
@@ -395,43 +400,49 @@ main {
   cursor: pointer;
 }
 
-.container {
+.card_container_right {
   padding-left: 5px;
   margin: 0;
 }
 
 .cards img {
-  width: 130px;
-  height: 100%;
+  width: 40%;
+  height: 147px;
   object-fit: cover;
   border: 1px solid #ffffff;
-  border-radius: 20px 0px 0px 20px;
+  border-radius: 15px 0px 0px 15px;
   margin: 0;
 }
 
 .cards h3 {
   padding-top: 10px;
   padding-bottom: 7px;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .cards p {
-  padding-bottom: 20px;
   font-size: 12px;
 }
 
-.card_container {
+.card_container_right {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
 }
 
-.card_container i {
-  font-size: 12px;
+.text-card-right {
+  margin: 0;
 }
 
-.bleu p {
-  padding-bottom: 30px;
+.text-card-right i {
+  font-size: 12px;
+  width: 12px;
+  height: 12px;
+}
+
+.star_right {
+  position: absolute;
+  bottom: 10px;
 }
 
 /* -----------------------------Activty Part----------------------------- */
