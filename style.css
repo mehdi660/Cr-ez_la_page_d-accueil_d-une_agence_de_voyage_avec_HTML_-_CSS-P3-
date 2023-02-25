@@ -283,7 +283,6 @@ main {
 }
 
 .ligne {
-  border: 2px solid red;
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -322,11 +321,13 @@ main {
 
 .afficher {
   text-align: left;
+  margin: 0;
+}
+
+.afficher h3 {
   padding-left: 15px;
   cursor: pointer;
   font-weight: 700;
-  width: 207px;
-  margin: 0;
 }
 
 .text-card-left {
@@ -579,45 +580,52 @@ footer {
     padding-left: 22px; */
   }
 
+  nav div {
+    width: 100%;
+    margin-left: 50%;
+  }
+
+  nav a {
+    width: 90%;
+  }
+
   .card_left {
     width: 100%;
-    height: 100%;
+    height: 626px;
   }
   .card_left h2 {
-    padding-top: 42px;
-    padding-left: 4%;
+    padding-top: 9px;
+    margin-bottom: 30px;
   }
 
   .card {
-    width: 226px;
-    height: 179px;
+    width: 246px;
+    height: 199px;
     padding-bottom: 5px;
   }
 
   .card img {
-    width: 226px;
-    height: 104px;
-  }
-
-  .container {
-    padding-left: 5px;
-  }
-
-  .container p {
-    padding-left: 5px;
-    padding-bottom: 500%;
+    width: 100%;
+    height: 124px;
   }
 
   .afficher {
     width: 868px;
     text-align: left;
-    padding-left: 50px;
     font-size: 18px;
   }
 
   .afficher h3 {
     font-size: 18px;
+    cursor: pointer;
   }
+
+  .card_right {
+    height: 278px;
+    width: 100%;
+    margin-top: 53px;
+  }
+
   .cards {
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
     padding: 2px;
@@ -627,35 +635,25 @@ footer {
     background: #ffff;
     cursor: pointer;
     box-sizing: initial;
-    margin: 0;
     position: relative;
   }
 
-  .card_items {
+  .card_container_right {
     padding-left: 10px;
     width: 100%;
     height: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 2%;
   }
 
-  .card_items h3 {
+  .card_container_right h3 {
     font-size: 16px;
+    font-weight: 700;
   }
 
-  .card_items p {
-    font-size: 11px;
-  }
-
-  .card_items i {
-    position: absolute;
-    bottom: 300px;
-  }
-
-  .card_right {
-    width: 100%;
-    height: 300px;
-    margin: 0;
-    padding-top: 20px;
-    margin-top: 30px;
+  .card_container_right p {
+    font-size: 13px;
   }
 
   .title_right {
@@ -663,8 +661,8 @@ footer {
   }
 
   .title_right h2 {
-    padding-right: 70%;
-    font-size: 18px;
+    padding-right: 10%;
+    font-size: 22px;
   }
 
   .star_right {
@@ -676,52 +674,14 @@ footer {
     padding: 0;
   }
 
-  .card_right p {
-    padding: 0;
-    padding-bottom: 10%;
-  }
-
   .card_right img {
     width: 106px;
-    height: 144px;
-  }
-
-  .card_container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 20px;
-    gap: 1%;
-    height: 250px;
-  }
-
-  .card_right p {
-    margin: 0;
-    font-size: 12px;
-    margin-bottom: 15%;
-    padding-bottom: 0;
-  }
-
-  strong {
-    font-size: 10px;
-  }
-
-  .card_right h3 {
-    margin: 0;
-    font-size: 14px;
-  }
-
-  .card_right h2 {
-    padding-bottom: 0;
-  }
-
-  .card_right i {
-    font-size: 11px;
+    height: 100%;
   }
 
   .activite {
     width: 100%;
-    height: 450px;
+    height: 400px;
   }
 
   #activ {
