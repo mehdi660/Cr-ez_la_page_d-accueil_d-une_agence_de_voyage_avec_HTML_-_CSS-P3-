@@ -908,7 +908,7 @@ footer {
     height: 580px;
     border-radius: 0;
     margin-top: 10px;
-    padding: 30px 30px 20px 20px;
+    padding: 30px 20px 30px 20px;
   }
 
   .title_right {
@@ -920,5 +920,27 @@ footer {
     flex-direction: column;
     padding: 0;
     width: 100%;
+  }
+
+  .cards {
+    width: 95%;
+    height: 144px;
+    margin: 0;
+  }
+
+  .cards img {
+    width: 137px;
+  }
+
+  .cards p {
+    font-size: 14px;
+  }
+
+  .cards strong {
+    font-size: 14px;
+  }
+
+  .text-card-right {
+    padding-left: 5px;
   }
 }
