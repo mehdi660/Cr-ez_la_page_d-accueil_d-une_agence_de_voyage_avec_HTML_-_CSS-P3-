@@ -263,7 +263,7 @@ main {
   padding: 30px 30px;
   margin: 0;
   width: 100%;
-  height: 626px;
+
   margin-right: 20px;
 }
 
@@ -367,7 +367,6 @@ main {
 
 .card_right {
   width: 40%;
-  height: 626px;
   background: #f2f2f2;
   border-radius: 20px;
   padding: 30px 30px;
@@ -453,7 +452,6 @@ main {
 
 .activite {
   width: 100%;
-  height: 700px;
 }
 
 .activite h2 {
@@ -742,10 +740,6 @@ footer {
     margin: 0;
   }
 
-  nav div:hover {
-    border-bottom: none;
-  }
-
   nav a {
     padding: 0;
     font-size: 16px;
@@ -895,24 +889,25 @@ footer {
 
   main {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     width: 100%;
-    height: 580px;
     padding-left: 0;
   }
 
   /* -----------------------------Main / Right Part----------------------------- */
 
   .card_right {
-    order: -1;
-    height: 580px;
     border-radius: 0;
     margin-top: 10px;
-    padding: 30px 20px 30px 20px;
+    padding: 28px 20px 30px 20px;
+    margin-bottom: 50px;
+    height: 100%;
   }
 
   .title_right {
-    padding-bottom: 16px;
+    margin-top: px;
+    margin-bottom: 24px;
+    padding: 0;
   }
 
   .card_container_right {
@@ -926,6 +921,7 @@ footer {
     width: 95%;
     height: 144px;
     margin: 0;
+    margin-bottom: 11px;
   }
 
   .cards img {
@@ -942,5 +938,19 @@ footer {
 
   .text-card-right {
     padding-left: 5px;
+  }
+
+  /* -----------------------------Main / left Part----------------------------- */
+
+  .card_left {
+    padding-top: 20px;
+  }
+
+  .ligne {
+    flex-direction: column;
+  }
+
+  .activite_card {
+    height: 0;
   }
 }
