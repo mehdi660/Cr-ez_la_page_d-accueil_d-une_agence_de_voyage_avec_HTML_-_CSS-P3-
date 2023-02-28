@@ -1002,6 +1002,10 @@ footer {
     height: 80%;
   }
 
+  .cardd h3 {
+    padding-left: 19px;
+  }
+
   /* ----------------------------- Footer ----------------------------- */
   footer {
     padding: 0 30px;
