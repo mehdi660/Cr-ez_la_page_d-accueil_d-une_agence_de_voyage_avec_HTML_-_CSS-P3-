@@ -997,4 +997,26 @@ footer {
   }
 
   /* ----------------------------- Footer ----------------------------- */
+  footer {
+    padding: 0 30px;
+    margin-top: 57px;
+  }
+
+  .footer_container {
+    flex-direction: column;
+    padding-top: 45px;
+  }
+
+  .footer_container li {
+    padding-bottom: 12px;
+    font-weight: 400;
+  }
+
+  .footer_container h3 {
+    padding-bottom: 20px;
+  }
+
+  .footer_container ul {
+    margin-bottom: 40px;
+  }
 }
