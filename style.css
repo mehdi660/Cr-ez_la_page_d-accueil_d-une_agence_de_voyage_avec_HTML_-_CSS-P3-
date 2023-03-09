@@ -92,6 +92,7 @@ header {
   margin-bottom: 30px;
   display: flex;
 }
+
 input {
   padding-left: 17px;
   font-weight: 700;
@@ -325,15 +326,17 @@ main {
   font-size: 14px;
 }
 
-.afficher {
+/* .afficher {
   text-align: left;
   margin: 0;
-}
+  width: 16%;
+} */
 
-.afficher h3 {
+#afficher {
   padding-left: 15px;
   cursor: pointer;
   font-weight: 700;
+  display: inline;
 }
 
 .text-card-left {
@@ -398,6 +401,7 @@ main {
 .colorblue {
   color: #0065fc;
 }
+
 .colorgrey {
   color: #d6d1d1;
 }
@@ -488,7 +492,7 @@ main {
 }
 
 .cardd {
-  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+  filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.1));
   padding: 2px;
   padding-bottom: 20px;
   border-radius: 20px;
@@ -512,10 +516,12 @@ footer {
 .footer_container {
   display: flex;
   justify-content: space-around;
+
 }
 
 .propos {
   margin: 0;
+
 }
 
 .propos h3 {
@@ -534,10 +540,12 @@ footer {
 
 .hebergements {
   margin: 0;
+
 }
 
 .assistance {
   margin: 0;
+
 }
 
 .hebergements h3 {
@@ -553,6 +561,8 @@ footer {
 .hebergements ul {
   padding: 0;
 }
+
+
 
 .assistance h3 {
   font-weight: 700;
@@ -598,6 +608,7 @@ footer {
   .card_left {
     width: 100%;
   }
+
   .card_left h2 {
     padding-top: 9px;
     margin-bottom: 30px;
@@ -860,6 +871,7 @@ footer {
     height: 14.78px;
     font-size: 16px;
   }
+
   .person i {
     width: 20.44px;
     font-size: 20px;
@@ -982,7 +994,7 @@ footer {
     height: 124px;
   }
 
-  .afficher {
+  #afficher {
     display: none;
   }
 
