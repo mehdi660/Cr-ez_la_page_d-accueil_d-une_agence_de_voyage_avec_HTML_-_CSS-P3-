@@ -13,7 +13,6 @@ body {
   background: #ffffff;
   margin: 0 auto;
   padding-left: 20px;
-  overflow-x: hidden;
 }
 
 section img {
@@ -738,7 +737,7 @@ footer {
 @media screen and (max-width: 768px) {
   body {
     max-width: 768px;
-    min-width: 375px;
+    min-width: 320px;
     display: block;
     padding-left: 0;
     padding-right: 0;
@@ -810,7 +809,7 @@ footer {
   }
 
   form input {
-    width: 232px;
+    width: 79%;
   }
 
   .shearch {
