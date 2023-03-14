@@ -209,6 +209,14 @@ form button:hover {
   padding-right: 10px;
 }
 
+.cards {
+  width: 100%;
+}
+
+.card {
+  width: 100%;
+}
+
 .money {
   width: 150px;
 }
@@ -955,10 +963,11 @@ footer {
   }
 
   .title_right {
-    margin-top: px;
     margin-bottom: 24px;
     padding: 0;
   }
+
+
 
   .card_container_right {
     display: flex;
@@ -971,11 +980,11 @@ footer {
     width: 95%;
     height: 144px;
     margin: 0;
-    margin-bottom: 11px;
+    margin-bottom: 21px;
   }
 
   .cards img {
-    width: 137px;
+    width: 43%;
   }
 
   .cards p {
