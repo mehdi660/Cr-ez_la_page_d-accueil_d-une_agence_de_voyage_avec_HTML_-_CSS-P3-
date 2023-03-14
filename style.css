@@ -261,6 +261,12 @@ main {
   height: 100%;
 }
 
+.card_left a {
+  width: 100%;
+  text-decoration: none;
+  color: black;
+}
+
 .card_left {
   background: #f2f2f2;
   border-radius: 20px;
@@ -311,7 +317,7 @@ main {
   width: 100%;
   height: 124px;
   object-fit: cover;
-  border: 5px solid #ffffff;
+  border: 3px solid #ffffff;
   border-radius: 20px 20px 0px 0px;
 }
 
@@ -358,6 +364,22 @@ main {
 }
 
 /* -----------------------------Main / Right Part----------------------------- */
+.card_right a {
+  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+  padding: 5px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  width: 100%;
+  height: 144px;
+  background: #ffff;
+  box-sizing: initial;
+  display: flex;
+  gap: 10px;
+  position: relative;
+  text-decoration: none;
+  color: black;
+}
 
 .title_right {
   display: flex;
@@ -383,20 +405,6 @@ main {
   margin: 0;
 }
 
-.cards {
-  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-  padding: 5px;
-  margin-top: 5px;
-  margin-bottom: 20px;
-  border-radius: 20px;
-  width: 100%;
-  height: 144px;
-  background: #ffff;
-  box-sizing: initial;
-  display: flex;
-  gap: 10px;
-  position: relative;
-}
 
 .colorblue {
   color: #0065fc;
@@ -461,6 +469,11 @@ main {
   width: 100%;
 }
 
+.activite a {
+  text-decoration: none;
+  color: black;
+}
+
 .activite h2 {
   padding-bottom: 18px;
   margin-top: 60px;
@@ -493,7 +506,6 @@ main {
 
 .cardd {
   filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.1));
-  padding: 2px;
   padding-bottom: 20px;
   border-radius: 20px;
   width: 24%;
@@ -646,16 +658,23 @@ footer {
     margin-top: 53px;
   }
 
-  .cards {
+
+
+  .card_right a {
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-    padding: 2px;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 20px;
     border-radius: 20px;
-    width: 252px;
+    width: 100%;
     height: 144px;
     background: #ffff;
-    cursor: pointer;
     box-sizing: initial;
+    display: flex;
+    gap: 10px;
     position: relative;
+    text-decoration: none;
+    color: black;
   }
 
   .card_container_right {
@@ -695,7 +714,7 @@ footer {
   }
 
   .card_right img {
-    width: 106px;
+    width: 90px;
     height: 100%;
   }
 
